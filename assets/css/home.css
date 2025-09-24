@@ -37,7 +37,8 @@ nav>#login-btns{
 #title{
     font-size: 22px;
     font-weight: 600;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 #login-btns>li{
     border: 1.5px solid #c0c0c0;

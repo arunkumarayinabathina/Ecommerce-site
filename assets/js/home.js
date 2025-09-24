@@ -1,16 +1,25 @@
 const navlinksul = document.getElementById("navlinks");
 
+
+const title = document.getElementById("title");
+title.addEventListener("click", () => {
+    window.location.href = "../index.html";
+});
+
+
 let navtabs = ["Home","Products","About","Contact"]
 
 navtabs.map((link)=>{
     const list_item = document.createElement('li')
     const anchor = document.createElement('a')
     anchor.innerText = link
-    if(link.toLowerCase() === "home"){
-        anchor.setAttribute("href","#")
-    }
-    else{
-        anchor.setAttribute("href",`${link.toLowerCase()}.html`)
+
+    let href = (link.toLowerCase() === "home") ? "../index.html" : `./pages/${link.toLowerCase()}.html`;
+
+    anchor.setAttribute("href", href);
+
+    if (window.location.pathname.endsWith(href.replace("./", ""))) {
+        anchor.addEventListener("click", (e) => e.preventDefault());
     }
     list_item.append(anchor)
     navlinksul.appendChild(list_item)
@@ -98,5 +107,3 @@ filterCategories.forEach(category => {
         }
     });
 });
-
-
