@@ -205,3 +205,67 @@ nav>#login-btns{
   font-weight: 600;
   font-size: 1.1rem;
 }
+
+.contact-main {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.contact-main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-main hr {
+  text-align: center;
+  margin: 20px 0 40px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.contact-main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main label {
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.contact-main input,
+.contact-main textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-main textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-main button {
+  width: 150px;
+  margin-left: 120px;
+  background: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-main button:hover {
+  background: #333;
+}

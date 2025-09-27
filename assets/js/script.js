@@ -2,7 +2,7 @@ const navlinksul = document.getElementById("navlinks");
 
 const title = document.getElementById("title");
 title.addEventListener("click", () => {
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 });
 
 let navtabs = ["Home", "Products", "About", "Contact"];
