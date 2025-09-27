@@ -14,8 +14,8 @@ navtabs.map((link) => {
 
   let href =
     link.toLowerCase() === "home"
-      ? "../index.html"
-      : `/pages/${link.toLowerCase()}.html`;
+      ? "./index.html"
+      : `./${link.toLowerCase()}.html`;
 
   anchor.setAttribute("href", href);
 
@@ -116,19 +116,19 @@ filterCategories.forEach((category) => {
 
 const categories = [
   {
-    img: "../assets/images/womens_clothing.jpeg",
+    img: "./assets/images/womens_clothing.jpeg",
     title: "Women's Clothing",
   },
   {
-    img: "../assets/images/mens_clothing.jpeg",
+    img: "./assets/images/mens_clothing.jpeg",
     title: "Men's Clothing",
   },
   {
-    img: "../assets/images/jeweleries.webp",
+    img: "./assets/images/jeweleries.webp",
     title: "Jewelery",
   },
   {
-    img: "../assets/images/electronics.jpeg",
+    img: "./assets/images/electronics.jpeg",
     title: "Electronics",
   },
 ];
