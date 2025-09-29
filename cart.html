@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Store</title>
     <link rel="icon" href="./assets/images/online-store.png" type="image/png">
@@ -12,10 +11,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-
-<body>
-    <nav>
+  </head>
+  <body>
+      <nav>
         <p id="title">Ecommerce</p>
         <ul id="navlinks" class="navlinks">
 
@@ -27,36 +25,35 @@
         </ul>
     </nav>
 
-    <header id="banner">
-        <p>New Season Arrivals</p>
-        <p>This is a wider card with supporting text bellow as a natural lead in to additional content.This content is a
-            little bit longer</p>
-    </header>
-
-    <main>
-        <div id="products-header">Latest Products</div>
+    <div class="cart-main">
+        <h2>Cart</h2>
         <hr>
 
-        <div class="product-btns">
-            <ul class="products-category">
-                <li >All</li>
-                <li >Men's Clothing</li>
-                <li >Women's Clothing</li>
-                <li >Jewelery</li>
-                <li >Electronics</li>
-            </ul>
-        </div>
+        <section>
+            <div id="item-list">
+                <h2>Item List</h2>
+                <div class="item-card">
+                    <img src="./assets/images/71li-ujtlUL._AC_UX679_.jpg" alt="">
+                    <p>
+                    <strong>Mens cotten jacket</strong></p>
+                    <div class="right">
+                        <p><button>-</button><span>1</span><button>+</button></p>
 
-
-        <div class="products-container">
-           
-        </div>
-    </main>
-
-    <footer style="text-align: center; margin-top: 30px;">
-        Made with <i class="fa-solid fa-heart" style="color: #f50535;"></i> by <a href="#" style="font-size: 18px; color: black;">Arun</a>
-    </footer>
+                        <p>1 x $109.95</p>
+                    </div>
+                </div>
+            </div>
+            <div id="order-summary">
+                <h2>Order Summry</h2>
+                <ul>
+                    <li>Products <span>$1.149</span></li>
+                    <li>Shipping <span>$30</span></li>
+                    <li><strong>Total  <span>$1179</span></strong></li>
+                </ul>
+                <button>Go to checkout</button>
+            </div>
+        </section>
+    </div>
     <script src="./assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

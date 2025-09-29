@@ -26,6 +26,11 @@ nav>.navlinks>li>a:hover{
 nav>.navlinks>li:first-child>a {
     color: black;
 }
+nav>ul>li>a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
 nav>#login-btns{
     display: flex;
     align-items: center;
@@ -268,4 +273,124 @@ nav>#login-btns{
 
 .contact-main button:hover {
   background: #333;
+}
+
+.cart-main>h2{
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
+}
+.cart-main>hr{
+  width: 90%;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 90%;
+  margin: 3% auto;        
+  align-items: flex-start;
+}
+
+#item-list {
+  flex: 2;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+#item-list > h2 {
+  background: #a9a9a9;
+  color: #000;
+  font-size: 18px;
+  margin: -1.5rem -1.5rem 1rem -1.5rem; 
+  padding: 0.8rem 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+.item-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  gap: 1rem;
+}
+.item-card:last-child {
+  border-bottom: none;
+}
+.item-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.item-card p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.item-card .right {
+  margin-left: auto;
+  text-align: center;
+}
+.item-card .right button {
+  border: none;
+  background: #fff;
+  padding: 2px 8px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+.item-card .right span {
+  margin: 0 4px;
+}
+
+#order-summary {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 300px;
+}
+#order-summary > h2 {
+  background: #a9a9a9;
+  color: #000;
+  font-size: 18px;
+  margin: -1.5rem -1.5rem 1rem -1.5rem; 
+  padding: 0.8rem 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#order-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+#order-summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 15px;
+}
+#order-summary button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  #order-summary {
+    max-width: 100%;
+  }
 }
